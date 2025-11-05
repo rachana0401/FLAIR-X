@@ -1,0 +1,10 @@
+torch==2.1.0
+torchvision==0.16.0
+flwr==1.8.0
+opacus==1.4.0
+streamlit==1.28.0
+plotly==5.17.0
+pandas
+numpy
+pillow
+matplotlib

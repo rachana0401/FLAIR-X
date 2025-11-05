@@ -1,0 +1,320 @@
+{
+  "metadata": {
+    "created_at": "2025-11-05T11:52:56.438904",
+    "version": "1.0",
+    "description": "FLAIR-X Privacy Ledger - Append-only log of privacy events",
+    "last_updated": "2025-11-05T19:13:04.111848"
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "timestamp": "2025-11-05T17:50:47.339707",
+      "clients": {
+        "A": {
+          "risk_score": 0.28733676487995086,
+          "noise_level": 0.475,
+          "train_acc": 0.6276276276276276,
+          "train_loss": 0.9636316028508273,
+          "num_samples": 333
+        },
+        "B": {
+          "risk_score": 0.38429970969832117,
+          "noise_level": 0.5,
+          "train_acc": 0.5056947608200456,
+          "train_loss": 1.154206782579422,
+          "num_samples": 439
+        },
+        "C": {
+          "risk_score": 0.33764284930133476,
+          "noise_level": 0.5,
+          "train_acc": 0.6568627450980392,
+          "train_loss": 1.1172067821025848,
+          "num_samples": 102
+        }
+      },
+      "global_metrics": {
+        "val_loss": 1.5780092230165639,
+        "val_acc": 0.15628019323671496
+      }
+    },
+    {
+      "round": 2,
+      "timestamp": "2025-11-05T17:59:49.134073",
+      "clients": {
+        "A": {
+          "risk_score": 0.3502391030015207,
+          "noise_level": 0.475,
+          "train_acc": 0.6456456456456456,
+          "train_loss": 0.9623990221457048,
+          "num_samples": 333
+        },
+        "B": {
+          "risk_score": 0.375160021274456,
+          "noise_level": 0.5,
+          "train_acc": 0.5148063781321185,
+          "train_loss": 1.1713401888098036,
+          "num_samples": 439
+        },
+        "C": {
+          "risk_score": 0.23527815713819483,
+          "noise_level": 0.475,
+          "train_acc": 0.6764705882352942,
+          "train_loss": 0.8857118934392929,
+          "num_samples": 102
+        }
+      },
+      "global_metrics": {
+        "val_loss": 1.1740669887422939,
+        "val_acc": 0.5758454106280194
+      }
+    },
+    {
+      "round": 3,
+      "timestamp": "2025-11-05T18:08:53.056886",
+      "clients": {
+        "A": {
+          "risk_score": 0.35644707579280976,
+          "noise_level": 0.475,
+          "train_acc": 0.6426426426426426,
+          "train_loss": 0.8844028873877092,
+          "num_samples": 333
+        },
+        "B": {
+          "risk_score": 0.3851687320615164,
+          "noise_level": 0.5,
+          "train_acc": 0.5603644646924829,
+          "train_loss": 1.0826908222266607,
+          "num_samples": 439
+        },
+        "C": {
+          "risk_score": 0.30754227240408505,
+          "noise_level": 0.475,
+          "train_acc": 0.6078431372549019,
+          "train_loss": 1.0327125936746597,
+          "num_samples": 102
+        }
+      },
+      "global_metrics": {
+        "val_loss": 1.111303340985579,
+        "val_acc": 0.5852657004830918
+      }
+    },
+    {
+      "round": 4,
+      "timestamp": "2025-11-05T18:17:55.312712",
+      "clients": {
+        "A": {
+          "risk_score": 0.19369989449251312,
+          "noise_level": 0.45125,
+          "train_acc": 0.7087087087087087,
+          "train_loss": 0.7779671549797058,
+          "num_samples": 333
+        },
+        "B": {
+          "risk_score": 0.2854516300934927,
+          "noise_level": 0.475,
+          "train_acc": 0.5671981776765376,
+          "train_loss": 1.033430176121848,
+          "num_samples": 439
+        },
+        "C": {
+          "risk_score": 0.3117251531891151,
+          "noise_level": 0.475,
+          "train_acc": 0.7254901960784313,
+          "train_loss": 0.7842343002557755,
+          "num_samples": 102
+        }
+      },
+      "global_metrics": {
+        "val_loss": 1.0429856287684418,
+        "val_acc": 0.5949275362318841
+      }
+    },
+    {
+      "round": 5,
+      "timestamp": "2025-11-05T18:27:08.712329",
+      "clients": {
+        "A": {
+          "risk_score": 0.2560556861833329,
+          "noise_level": 0.42868749999999994,
+          "train_acc": 0.7177177177177178,
+          "train_loss": 0.7620855407281355,
+          "num_samples": 333
+        },
+        "B": {
+          "risk_score": 0.3540739318094664,
+          "noise_level": 0.475,
+          "train_acc": 0.5990888382687927,
+          "train_loss": 1.001623809337616,
+          "num_samples": 439
+        },
+        "C": {
+          "risk_score": 0.22160339748952637,
+          "noise_level": 0.45125,
+          "train_acc": 0.7352941176470589,
+          "train_loss": 0.7491396814584732,
+          "num_samples": 102
+        }
+      },
+      "global_metrics": {
+        "val_loss": 1.0408210282164496,
+        "val_acc": 0.5971014492753622
+      }
+    },
+    {
+      "round": 6,
+      "timestamp": "2025-11-05T18:36:20.450998",
+      "clients": {
+        "A": {
+          "risk_score": 0.2049049196806992,
+          "noise_level": 0.40725312499999994,
+          "train_acc": 0.7567567567567568,
+          "train_loss": 0.696874504739588,
+          "num_samples": 333
+        },
+        "B": {
+          "risk_score": 0.20027348522584437,
+          "noise_level": 0.45125,
+          "train_acc": 0.6514806378132119,
+          "train_loss": 0.92525486435209,
+          "num_samples": 439
+        },
+        "C": {
+          "risk_score": 0.34013796475299135,
+          "noise_level": 0.45125,
+          "train_acc": 0.7352941176470589,
+          "train_loss": 0.8577196300029755,
+          "num_samples": 102
+        }
+      },
+      "global_metrics": {
+        "val_loss": 1.023676489862267,
+        "val_acc": 0.5746376811594203
+      }
+    },
+    {
+      "round": 7,
+      "timestamp": "2025-11-05T18:45:24.301800",
+      "clients": {
+        "A": {
+          "risk_score": 0.14339329087483954,
+          "noise_level": 0.38689046874999994,
+          "train_acc": 0.7897897897897898,
+          "train_loss": 0.5406750630248677,
+          "num_samples": 333
+        },
+        "B": {
+          "risk_score": 0.2410848526256324,
+          "noise_level": 0.42868749999999994,
+          "train_acc": 0.6902050113895216,
+          "train_loss": 0.7973918489047459,
+          "num_samples": 439
+        },
+        "C": {
+          "risk_score": 0.15919831943325397,
+          "noise_level": 0.42868749999999994,
+          "train_acc": 0.8137254901960784,
+          "train_loss": 0.5973440855741501,
+          "num_samples": 102
+        }
+      },
+      "global_metrics": {
+        "val_loss": 0.9041240929405471,
+        "val_acc": 0.6512077294685991
+      }
+    },
+    {
+      "round": 8,
+      "timestamp": "2025-11-05T18:54:35.283520",
+      "clients": {
+        "A": {
+          "risk_score": 0.1322695706943747,
+          "noise_level": 0.3675459453124999,
+          "train_acc": 0.8468468468468469,
+          "train_loss": 0.4611436562104659,
+          "num_samples": 333
+        },
+        "B": {
+          "risk_score": 0.16760338954643442,
+          "noise_level": 0.40725312499999994,
+          "train_acc": 0.7334851936218679,
+          "train_loss": 0.6939991584845951,
+          "num_samples": 439
+        },
+        "C": {
+          "risk_score": 0.0296757206987594,
+          "noise_level": 0.40725312499999994,
+          "train_acc": 0.8823529411764706,
+          "train_loss": 0.3761581629514694,
+          "num_samples": 102
+        }
+      },
+      "global_metrics": {
+        "val_loss": 0.8838772796778288,
+        "val_acc": 0.6910628019323672
+      }
+    },
+    {
+      "round": 9,
+      "timestamp": "2025-11-05T19:03:50.688403",
+      "clients": {
+        "A": {
+          "risk_score": 0.05094239377739325,
+          "noise_level": 0.34916864804687486,
+          "train_acc": 0.8228228228228228,
+          "train_loss": 0.394365519285202,
+          "num_samples": 333
+        },
+        "B": {
+          "risk_score": 0.22622582474512068,
+          "noise_level": 0.38689046874999994,
+          "train_acc": 0.7813211845102506,
+          "train_loss": 0.6553457528352737,
+          "num_samples": 439
+        },
+        "C": {
+          "risk_score": 0.15677504398332381,
+          "noise_level": 0.38689046874999994,
+          "train_acc": 0.8529411764705882,
+          "train_loss": 0.3908633403480053,
+          "num_samples": 102
+        }
+      },
+      "global_metrics": {
+        "val_loss": 0.7887435857800469,
+        "val_acc": 0.7089371980676328
+      }
+    },
+    {
+      "round": 10,
+      "timestamp": "2025-11-05T19:13:04.111812",
+      "clients": {
+        "A": {
+          "risk_score": 0.25605928061980454,
+          "noise_level": 0.3317102156445311,
+          "train_acc": 0.8798798798798799,
+          "train_loss": 0.3241406624967402,
+          "num_samples": 333
+        },
+        "B": {
+          "risk_score": 0.13001190032831336,
+          "noise_level": 0.3675459453124999,
+          "train_acc": 0.8132118451025057,
+          "train_loss": 0.4950038662978581,
+          "num_samples": 439
+        },
+        "C": {
+          "risk_score": 0.046190770110073553,
+          "noise_level": 0.3675459453124999,
+          "train_acc": 0.9313725490196079,
+          "train_loss": 0.20645902305841446,
+          "num_samples": 102
+        }
+      },
+      "global_metrics": {
+        "val_loss": 0.7586334154801668,
+        "val_acc": 0.746135265700483
+      }
+    }
+  ]
+}
