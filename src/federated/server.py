@@ -163,30 +163,40 @@ class AdaptivePrivacyStrategy(FedAvg):
         
         return aggregated_loss, aggregated_metrics
     
-    def _compute_risk_score(self, parameters, metrics):
-        """
-        Compute privacy risk score for a client
-        Higher score = more risk of data leakage
+    from intelligent_risk import IntelligentRiskCalculator, SmoothNoiseAdjuster
+
+class AdaptivePrivacyStrategy(FedAvg):
+    def __init__(self):
+        super().__init__(...)
         
-        Simplified version: based on gradient magnitude and variance
-        """
-        # Convert parameters to numpy
-        param_arrays = [np.array(p) for p in parameters.tensors]
-        
-        # Compute gradient statistics
-        grad_magnitudes = [np.linalg.norm(p) for p in param_arrays]
-        avg_magnitude = np.mean(grad_magnitudes)
-        std_magnitude = np.std(grad_magnitudes)
-        
-        # Risk score (normalized to 0-1)
-        # Higher gradient variance indicates more information leakage potential
-        risk_score = min(1.0, (avg_magnitude + std_magnitude) / 100.0)
-        
-        # Add some randomness to simulate real privacy auditing
-        risk_score += np.random.normal(0, 0.05)
-        risk_score = np.clip(risk_score, 0.0, 1.0)
-        
-        return float(risk_score)
+        # Replace simple risk tracking with intelligent calculator
+        self.risk_calculator = IntelligentRiskCalculator()
+        self.noise_adjuster = SmoothNoiseAdjuster()
+    
+    def aggregate_fit(self, server_round, results, failures):
+        for client, fit_res in results:
+            hospital_id = chr(65 + int(client.cid))
+            
+            # Use intelligent risk calculator
+            risk_result = self.risk_calculator.compute_risk(
+                hospital_id,
+                fit_res.parameters.tensors,
+                server_round
+            )
+            
+            # Get trend
+            trend = self.risk_calculator.get_risk_trend(hospital_id)
+            
+            # Smooth noise adjustment
+            noise_adjustment = self.noise_adjuster.adjust_noise(
+                hospital_id,
+                risk_result['risk_score'],
+                trend
+            )
+            
+            # Store for next round
+            self.client_risk_scores[hospital_id] = risk_result['risk_score']
+            self.client_noise_levels[hospital_id] = noise_adjustment['new_noise']
     
     def _adjust_noise_levels(self):
         """
